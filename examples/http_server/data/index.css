@@ -1,0 +1,8 @@
+.pixelart {
+    image-rendering: pixelated;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+}

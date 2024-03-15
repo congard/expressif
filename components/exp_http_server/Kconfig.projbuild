@@ -1,0 +1,9 @@
+menu "Expressif HTTP Server"
+    config HTTP_SERVER_QUERY_VALUE_MAX_LEN
+        int "The maximum length of a single query value (in bytes)"
+        default 128
+
+    config HTTP_SERVER_CHUNK_SIZE
+        int "The default chunk size"
+        default 128
+endmenu

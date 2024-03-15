@@ -1,0 +1,11 @@
+.idea
+.pio
+
+.directory
+
+# stub files for CLion created in
+# order to open the project
+/src
+/CMakeLists.txt
+/platformio.ini
+/sdkconfig.*

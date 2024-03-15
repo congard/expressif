@@ -1,0 +1,11 @@
+menu "Expressif Wi-Fi"
+    config ENABLE_IPV6
+        bool "Whether use IPv6 or not"
+        default y
+        help
+            Choose this option if you want to obtain IPv6 address.
+
+    config WIFI_CONN_MAX_RETRY
+        int "Wi-Fi max retry count"
+        default 6
+endmenu
