@@ -47,7 +47,7 @@ This example connects to the specified Wi-Fi network and launches an HTTP Server
 | `GET  /api/path/{path}*`           | `Path: $path`                     |                                           |
 | `GET  /{file}*`                    | The content of the specified file | 404 in case of non-existent file          |
 
-**\**: to test file transfer you can you the following command:
+*: to test file transfer you can you the following command:
 
 ```bash
 curl --data-binary @/path/to/file $ip:80/api/echo > file
