@@ -39,7 +39,7 @@ bool Request::hasPathVar(std::string_view name) {
 }
 
 std::string Request::getQueryStr() const {
-    auto size = httpd_req_get_url_query_len(m_req);
+    auto size = httpd_req_get_url_query_len(m_req) + 1;
     std::string result(size, '\0');
     httpd_req_get_url_query_str(m_req, result.data(), size);
     return result;
